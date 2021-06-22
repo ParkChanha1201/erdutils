@@ -2,7 +2,11 @@ package com.chcraft.erd;
 
 import java.util.List;
 
-public class Entity {
+public class Field {
 	private String name;
-	private List<Field> fields;
+	private List<Option> options;
+
+	enum Option{
+
+	}
 }
