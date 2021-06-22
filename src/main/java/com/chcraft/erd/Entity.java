@@ -22,4 +22,8 @@ public class Entity {
 	public boolean addField(Field field) {
 		return fields.add(field);
 	}
+
+	public boolean removeField(Field field) {
+		return fields.remove(field);
+	}
 }

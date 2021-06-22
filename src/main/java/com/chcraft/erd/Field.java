@@ -33,5 +33,9 @@ public class Field {
 	public boolean addOption(Option option) {
 		return options.add(option);
 	}
+	
+	public boolean removeOption(Option option) {
+		return options.remove(option);
+	}
 }
 
