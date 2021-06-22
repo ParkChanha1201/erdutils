@@ -8,7 +8,9 @@ import com.chcraft.erd.Relationship;
 public class JavaFileGenerator implements ERDFileGenerator {
 
 	public String generateFile(List<Entity> entities, List<Relationship> relationships) {
-		// TODO Auto-generated method stub
+		StringBuilder sb = new StringBuilder();
+
+
 		return null;
 	}
 
