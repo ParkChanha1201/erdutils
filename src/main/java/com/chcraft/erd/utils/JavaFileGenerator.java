@@ -47,7 +47,8 @@ public class JavaFileGenerator{
 			Field field = fields.get(i);
 			sb.append("\t");
 			sb.append("private ");
-			sb.append("type ");
+			sb.append(field.getType());
+			sb.append(" ");
 			sb.append(StringExtension.toFirstCharLowerCase(field.getName()));
 			sb.append(";\n");
 		}
@@ -66,7 +67,8 @@ public class JavaFileGenerator{
 			//generate getter
 			sb.append("\t");
 			sb.append("public ");
-			sb.append("type ");
+			sb.append(field.getType());
+			sb.append(" ");
 			sb.append("get");
 			sb.append(StringExtension.toFirstCharUpperCase(field.getName()));
 			sb.append("() {\n");
@@ -82,7 +84,8 @@ public class JavaFileGenerator{
 			sb.append("set");
 			sb.append(StringExtension.toFirstCharUpperCase(field.getName()));
 			sb.append("(");
-			sb.append("type ");
+			sb.append(field.getType());
+			sb.append(" ");
 			sb.append(StringExtension.toFirstCharLowerCase(field.getName()));
 			sb.append(") {\n");
 			sb.append("\t\tthis.");

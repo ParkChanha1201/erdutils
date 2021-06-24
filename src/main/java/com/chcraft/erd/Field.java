@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Field {
 	private String name;
+	private String type;
 	private List<Option> options;
 
 	enum Option {
@@ -22,6 +23,14 @@ public class Field {
 		this.name = name;
 	}
 
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 	public List<Option> getOptions() {
 		return options;
 	}
@@ -33,7 +42,7 @@ public class Field {
 	public boolean addOption(Option option) {
 		return options.add(option);
 	}
-	
+
 	public boolean removeOption(Option option) {
 		return options.remove(option);
 	}
