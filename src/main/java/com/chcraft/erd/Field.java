@@ -5,14 +5,8 @@ import java.util.List;
 
 public class Field {
 	private String name;
-	private List<Option> options;
-
-	enum Option {
-		PK,//Primary Key
-		NN,//Not Null
-		UQ,//Unique
-		AI;//Auto_Increment
-	}
+	private String type;
+	private List<FieldOption> options;
 
 	public String getName() {
 		return name;
@@ -22,20 +16,27 @@ public class Field {
 		this.name = name;
 	}
 
-	public List<Option> getOptions() {
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public List<FieldOption> getOptions() {
 		return options;
 	}
 
-	public void setOptions(List<Option> options) {
+	public void setOptions(List<FieldOption> options) {
 		this.options = options;
 	}
 
-	public boolean addOption(Option option) {
+	public boolean addOption(FieldOption option) {
 		return options.add(option);
 	}
-	
-	public boolean removeOption(Option option) {
+
+	public boolean removeOption(FieldOption option) {
 		return options.remove(option);
 	}
 }
-

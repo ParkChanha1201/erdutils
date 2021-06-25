@@ -7,4 +7,6 @@ import com.chcraft.erd.Relationship;
 
 public interface SQLFileGenerator{
 	public String generateFile(List<Entity> entities, List<Relationship> relationships);
+	public String generateEntity(Entity entity);
+	public String generateRelationship(Relationship relationship);
 }
