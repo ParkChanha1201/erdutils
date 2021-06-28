@@ -15,26 +15,23 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
 		<plugins>
-			<!--plugin> 
-				used for excutable jar
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<mainClass>
-								com.chcraft.erd.ConsoleApp
-							</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin-->
-			
+			<!--plugin> used for excutable jar <groupId>org.apache.maven.plugins</groupId> 
+				<artifactId>maven-jar-plugin</artifactId> <configuration> <archive> <manifest> 
+				<addClasspath>true</addClasspath> <mainClass> com.chcraft.erd.ConsoleApp 
+				</mainClass> </manifest> </archive> </configuration> </plugin -->
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
