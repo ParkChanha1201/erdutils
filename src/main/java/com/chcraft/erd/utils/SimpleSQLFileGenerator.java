@@ -38,7 +38,7 @@ public class SimpleSQLFileGenerator implements SQLFileGenerator {
 													+ ");\n";
 
 	@Override
-	public String generateFile(List<Entity> entities, List<Relationship> relationships) {
+	public String generateFileString(List<Entity> entities, List<Relationship> relationships) {
 		StringBuilder sb = new StringBuilder();
 
 		int entitySize = entities.size();

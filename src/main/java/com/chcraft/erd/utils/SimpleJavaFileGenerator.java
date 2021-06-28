@@ -17,7 +17,7 @@ public class SimpleJavaFileGenerator implements JavaFileGenerator{
 			+"[GETTERANDSETTER]\n"
 			+"}";
 
-	public String generateFile(Entity entity, String packagePath, boolean generateGetterAndSetter) {
+	public String generateFileString(Entity entity, String packagePath, boolean generateGetterAndSetter) {
 		String fields = generateFields(entity);
 		String getterAndSetter = generateGetterAndSetter(entity);
 
