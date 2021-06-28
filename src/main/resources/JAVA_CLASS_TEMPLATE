@@ -1,0 +1,7 @@
+//JAVA_CLASS_TEMPLATE
+package [PACKAGEPATH];
+
+public class [CLASSNAME]{
+	[FIELD]
+	[GETTERANDSETTER]
+}
