@@ -12,6 +12,11 @@ public class Entity {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Field getPrimaryKey() {
+		return fields.stream().findFirst().get();
+	}
+
 	public List<Field> getFields() {
 		return fields;
 	}
